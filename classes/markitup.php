@@ -5,11 +5,12 @@ namespace Propeller;
 class MarkItUp {
 
 	public static function inject_assets() {
-		AssetInjector::add_css('markitup/markitup.css');
-		AssetInjector::add_js('markitup/jquery.markitup.js');
-
-		AssetInjector::add_js('markitup/textile.js');
-		AssetInjector::add_css('markitup/textile.css');
+		\Propeller\Asset::add_path('assets/markitup/');
+		\Propeller\AssetInjector::add_js('textile.js');
+		\Propeller\AssetInjector::add_js('jquery.markitup.js');
+		\Propeller\AssetInjector::add_js('init.js');
+		\Propeller\AssetInjector::add_css('textile.css');
+		\Propeller\AssetInjector::add_css('markitup.css');
 	}
 
 }
