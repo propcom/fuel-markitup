@@ -9,8 +9,6 @@ class MarkItUp {
 		\Propeller\AssetInjector::add_js('textile.js');
 		\Propeller\AssetInjector::add_js('jquery.markitup.js');
 		\Propeller\AssetInjector::add_js('init.js');
-		\Propeller\AssetInjector::add_css('textile.css');
-		\Propeller\AssetInjector::add_css('markitup.css');
 	}
 
 }
