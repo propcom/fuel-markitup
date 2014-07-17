@@ -1,0 +1,14 @@
+{
+    "name": "propcom/fuel-markitup",
+    "description": "Markitup and textile support for FuelPHP",
+    "authors": [
+        {
+            "name": "Propeller Communications",
+            "email": "dev@propcom.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=5.4.0"
+	}
+}
