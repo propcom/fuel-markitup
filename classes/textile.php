@@ -514,6 +514,9 @@ class Textile
 
 	function TextileThis($text, $lite = '', $encode = '', $noimage = '', $strict = '', $rel = '')
 	{
+		//If you pass in encoded html make sure to change that first
+		$text = html_entity_decode($text);
+
 		$this->span_depth = 0;
 		$this->tag_index = 1;
 		$this->notes = $this->unreferencedNotes = $this->notelist_cache = array();
